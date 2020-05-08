@@ -1,0 +1,38 @@
+.main {
+    margin-top: 5%;
+}
+
+.desc {
+    color: #8664c3;
+    font-family: "Segoe UI light";
+    font-size: 3vw;
+    margin-top: 2%;
+    margin-bottom: 8%;
+}
+
+.heading {
+    color: #8664c3;
+    font-weight: bold;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 12vw;
+    margin: 0;
+}
+
+.logo img {
+    z-index: 1;
+    position: fixed;
+    max-width: 300px;
+    max-height: 300px;
+    width: 25vw;
+    height: 25vw;
+    opacity: 0.3;
+    margin-top: 6%;
+}
+.sep {
+    height: 6px;
+    width: 60vw;
+    margin: 1% 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #8664c3;
+}

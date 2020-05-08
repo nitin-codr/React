@@ -1,17 +1,42 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import Navbar from './components/Navbar/Navbar';
+// import BaseNavbar from './components/BaseBar/BaseNavbar';
+// import MainContent from './components/MainContent/MainContent';
+import './App.css';
+import AboutApp from './components/About/AboutApp';
+
+class App extends React.Component {
+    state= {
+        nMode: 0
+    }
+    onClickHandle = (nMode) => {
+        this.setState({nMode});
+    }
+    render() {
+        let modeClass;
+        (this.state.nMode===0) ? modeClass="day" : modeClass="night";
+        return (
+            <div className={`app ${modeClass}`}>
+                <div>
+                    <Navbar onClick={this.onClickHandle} nMode={this.state.nMode} />
+                </div>
+                <br />
+                {/* <div>
+                    <MainContent />
+                </div>
+                <div>
+                    <BaseNavbar />
+                </div> */}
+                <div>
+                    <AboutApp />
+                </div>
+            </div>
+        );
+    };
+};
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+    <App />,
+    document.querySelector('#root')
+)
