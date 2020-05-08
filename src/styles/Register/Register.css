@@ -11,6 +11,10 @@ form {
     margin-bottom: -10%;
 }
 
+#login {
+    margin: 10% 0 5% 0;
+}
+
 .night .topic {
     color: #d4d1d1;
     font-size: 4vw;

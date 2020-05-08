@@ -6,7 +6,8 @@ import Navbar from './components/Navbar/Navbar';
 import './App.css';
 // import AboutApp from './components/About/AboutApp';
 // import TeamApp from './components/Team/TeamApp';
-import Register from './components/Register/Register';
+// import Register from './components/Register/Register';
+import Login from './components/Login/Login';
 
 class App extends React.Component {
     state= {
@@ -34,8 +35,11 @@ class App extends React.Component {
                 {/* <div>
                     <TeamApp />
                 </div> */}
-                <div>
+                {/* <div>
                     <Register />
+                </div> */}
+                <div>
+                    <Login />
                 </div>
             </div>
         );
