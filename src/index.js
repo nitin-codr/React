@@ -4,8 +4,8 @@ import Navbar from './components/Navbar/Navbar';
 // import BaseNavbar from './components/BaseBar/BaseNavbar';
 // import MainContent from './components/MainContent/MainContent';
 import './App.css';
-import AboutApp from './components/About/AboutApp';
-// import TeamApp from '../../pics/Team/TeamApp';
+// import AboutApp from './components/About/AboutApp';
+import TeamApp from './components/Team/TeamApp';
 
 class App extends React.Component {
     state= {
@@ -27,12 +27,12 @@ class App extends React.Component {
                 <div>
                     <BaseNavbar />
                 </div> */}
-                <div>
-                    <AboutApp nMode={this.state.nMode} />
-                </div>
                 {/* <div>
-                    <TeamApp />
+                    <AboutApp nMode={this.state.nMode} />
                 </div> */}
+                <div>
+                    <TeamApp />
+                </div>
             </div>
         );
     };
