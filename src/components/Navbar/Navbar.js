@@ -3,12 +3,14 @@ import '../../styles/Navbar/Navbar.css'
 
 class Navbar extends React.Component {
     onIconClick = (event) => {
-        this.props.onClick(1-this.props.nMode);
+        let x=this.props.nMode;
+        (x==="day") ? x="night" : x="day";
+        this.props.onClick(x);
     }
     render() {   
         let nMode=this.props.nMode;
         let cl='off';
-        if(nMode===1) {
+        if(nMode==="night") {
             cl='on';
         }
         return (

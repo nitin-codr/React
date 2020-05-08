@@ -1,4 +1,14 @@
 .tit {
+    color: #666666;
+    margin-left: 5%;
+    font-size: 5vw;
+    font-weight: bold;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.night .tit  {
+    color: #d4d1d1;
+    margin-left: 5%;
     font-size: 5vw;
     font-weight: bold;
     font-family: "Segoe UI", sans-serif;

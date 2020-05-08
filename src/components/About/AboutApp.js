@@ -1,24 +1,22 @@
 import React from 'react';
-import Navbar from '../Navbar/Navbar';
 import Title from '../Title/Title';
-import Heading from '../MainContent/Heading';
 import Name from '../Name/Name';
-import Description from "../MainContent/Description";
+import Detail from '../Detail/Detail';
 import '../../styles/Cards/Cards.css';
 
-const About = () => {
+const About = (props) => {
     const desc="A free to use archive of day to day college classroom notes";
     return (
-        <div>
+        <div className={`${props.nMode}`}>
             <div>
-                <Title title="About" />
+                <Title nMode={props.nMode} title="About" />
             </div>
             <div className="cards">
                 <div>
-                    <Name text="Anavrin"/>
+                    <Name nMode={props.nMode} text="Anavrin"/>
                 </div>
                 <div>
-                    <Description desc={desc} />
+                    <Detail nMode={props.nMode} desc={desc} />
                 </div>
             </div>
         </div>

@@ -5,19 +5,18 @@ import Navbar from './components/Navbar/Navbar';
 // import MainContent from './components/MainContent/MainContent';
 import './App.css';
 import AboutApp from './components/About/AboutApp';
+// import TeamApp from '../../pics/Team/TeamApp';
 
 class App extends React.Component {
     state= {
-        nMode: 0
+        nMode: "day"
     }
     onClickHandle = (nMode) => {
         this.setState({nMode});
     }
     render() {
-        let modeClass;
-        (this.state.nMode===0) ? modeClass="day" : modeClass="night";
         return (
-            <div className={`app ${modeClass}`}>
+            <div className={`app ${this.state.nMode}`}>
                 <div>
                     <Navbar onClick={this.onClickHandle} nMode={this.state.nMode} />
                 </div>
@@ -29,8 +28,11 @@ class App extends React.Component {
                     <BaseNavbar />
                 </div> */}
                 <div>
-                    <AboutApp />
+                    <AboutApp nMode={this.state.nMode} />
                 </div>
+                {/* <div>
+                    <TeamApp />
+                </div> */}
             </div>
         );
     };
