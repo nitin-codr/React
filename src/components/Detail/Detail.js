@@ -3,7 +3,7 @@ import '../../styles/About/About.css';
 
 const Detail = (props) => {
     return (
-        <div className={`detail ${props.nMode}`}>
+        <div className="detail">
             {props.desc}
         </div>
     );

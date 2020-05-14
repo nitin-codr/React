@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Register = () => {
     return (
         <div>
-            <a href="/">Register</a>
+            <Link to="/register">Register</Link>
         </div>
     );
 };

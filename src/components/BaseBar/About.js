@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const About = () => {
     return (
         <div>
-            <a href="/">About</a>
+            <Link to="/about">About</Link>
         </div>
     );
 };

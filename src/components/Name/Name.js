@@ -3,7 +3,7 @@ import '../../styles/About/About.css';
 
 const Name = (props) => {
     return (
-        <div className={`name ${props.nMode}`}>
+        <div className="name">
             {props.text}
         </div>
     );

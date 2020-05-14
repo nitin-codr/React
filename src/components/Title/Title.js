@@ -3,7 +3,7 @@ import '../../styles/Title/Title.css';
 
 const Title = (props) => {
     return (
-        <div className={`tit ${props.nMode}`}>
+        <div className="tit">
             {props.title}
         </div>
     );

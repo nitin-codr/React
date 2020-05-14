@@ -3,15 +3,15 @@ import Title from '../Title/Title';
 import Topic from '../Topic/Topic';
 import '../../styles/Cards/Cards.css';
 
-const Register = (props) => {
+const Register = () => {
     return (
-        <div className={`${props.nMode}`}>
+        <div>
             <div>
-                <Title nMode={props.nMode} title="Join Us" />
+                <Title title="Join Us" />
             </div>
             <div className="cards">
                 <div>
-                    <Topic nMode={props.nMode} text="Signup"/>
+                    <Topic text="Signup"/>
                 </div>
                 <div>
                     <form class="ui form">

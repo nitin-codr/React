@@ -2,9 +2,9 @@ import React from 'react';
 import '../../styles/Cards/Cards.css';
 import '../../styles/Register/Register.css';
 
-const Register = (props) => {
+const Register = () => {
     return (
-        <div className={`${props.nMode}`}>
+        <div>
             <form class="ui form">
                 <div className="field row">
                     <label className="col-md-2" style={{fontSize: '1.2vw'}} for="name">Name</label>
