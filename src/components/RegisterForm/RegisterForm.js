@@ -2,8 +2,9 @@ import React from 'react';
 import Title from '../Title/Title';
 import Topic from '../Topic/Topic';
 import '../../styles/Cards/Cards.css';
+import Close from '../Close/Close';
 
-const Register = () => {
+const RegisterForm = () => {
     return (
         <div>
             <div>
@@ -51,8 +52,13 @@ const Register = () => {
                     </form>
                 </div>
             </div>
+            <div classname="row base">
+                <div className="col-md-12">
+                    <Close />
+                </div>
+            </div>
         </div>
     );
 };
 
-export default Register;
+export default RegisterForm;

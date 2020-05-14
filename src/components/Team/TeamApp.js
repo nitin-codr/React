@@ -3,6 +3,7 @@ import Title from '../Title/Title';
 import Name from '../Name/Name';
 import Detail from '../Detail/Detail';
 import '../../styles/Cards/Cards.css';
+import Close from '../Close/Close';
 
 const About = (props) => {
     const desc="Hi, I'm the developer behind this project. Currently pursuing my B.E. degree from NSIT. My interest in development bought us here.";
@@ -17,6 +18,12 @@ const About = (props) => {
                 </div>
                 <div>
                     <Detail desc={desc} />
+                </div>
+            </div>
+            
+            <div classname="row base">
+                <div className="col-md-12">
+                    <Close />
                 </div>
             </div>
         </div>

@@ -5,7 +5,7 @@ import Logo from './Logo';
 import Description from './Description';
 import '../../styles/MainContent/MainContent.css';
 
-const MainContent = (props) => {
+const MainContent = () => {
     return (
         <div className="row main">
             <div className="col-md-8">

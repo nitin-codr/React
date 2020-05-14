@@ -1,6 +1,6 @@
 .topic {
     color: #666666;
-    font-size: 4vw;
+    font-size: 3.5vw;
     font-weight: bold;
     font-family: "Segoe UI", sans-serif;
     background-color: inherit;
@@ -17,7 +17,7 @@ form {
 
 .night .topic {
     color: #d4d1d1;
-    font-size: 4vw;
+    font-size: 3.5vw;
     background-color: inherit;
     font-weight: bold;
     font-family: "Segoe UI", sans-serif;
