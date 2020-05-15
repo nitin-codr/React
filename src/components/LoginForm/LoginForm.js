@@ -3,12 +3,13 @@ import Title from '../Title/Title';
 import Topic from '../Topic/Topic';
 import '../../styles/Cards/Cards.css';
 import Close from '../Close/Close';
+import '../../styles/Dashboard/Dashboard.css';
 
 const LoginForm = () => {
     return (
         <div>
             <div>
-                <Title title="Join Us" />
+                <Title title="Login" />
             </div>
             <div className="cards">
                 <div>
@@ -17,15 +18,15 @@ const LoginForm = () => {
                 <div>
                     <form class="ui form" id="login">
                         <div className="field row">
-                            <label className="col-md-2" style={{fontSize: '1.5vw'}} for="email">Email</label>
-                            <input className="col-md-10" id="email" name="email" type="email" placeholder="Email" />
+                            <label className="col-md-2" for="email"><span>Email</span></label>
+                            <input className="col-md-10" id="email" name="email" type="email" placeholder="john@wick.com" />
                         </div>
                         <div className="field row">
-                            <label className="col-md-2" style={{fontSize: '1.5vw'}} for="passowrd">Password</label>
-                            <input className="col-md-10" id="password" name="password" type="password" placeholder="Password" />
+                            <label className="col-md-2" for="passowrd"><span>Password</span></label>
+                            <input className="col-md-10" id="password" name="password" type="password" placeholder="John123" />
                         </div>
                     </form>
-                    <button type="submit" className="ui primary button large">Login</button>
+                    <button type="submit">Login</button>
                 </div>
             </div>
             <div classname="row base">

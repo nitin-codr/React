@@ -3,19 +3,28 @@
 }
 
 .desc {
-    color: #8664c3;
     font-family: "Segoe UI light";
     font-size: 3vw;
     margin-top: 2%;
     margin-bottom: 8%;
 }
 
+.main .desc {
+    color: #8664c3;
+}
+
+
 .heading {
     color: #8664c3;
     font-weight: bold;
     font-family: "Segoe UI", sans-serif;
-    font-size: 12vw;
     margin: 0;
+    font-size: 8vw;
+}
+
+.main .heading {
+    font-size: 12vw;
+
 }
 
 .logo img {
@@ -28,11 +37,24 @@
     opacity: 0.3;
     margin-top: 6%;
 }
+.main .sep {
+    width: 60vw;
+}
+
 .sep {
     height: 6px;
-    width: 60vw;
-    margin: 1% 0;
+    margin: 1% 2% 1% 0;
     border: none;
     border-radius: 5px;
     background-color: #8664c3;
+
+}
+
+.card .desc {
+    color: #8664c3;
+    font-family: "Segoe UI light";
+    font-size: 3vw;
+    margin-top: 2%;
+    margin-bottom: 8%;
+    text-align: center;
 }

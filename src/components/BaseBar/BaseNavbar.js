@@ -1,7 +1,6 @@
 import React from 'react';
 import Team from './Team';
 import About from './About';
-import Register from './Register';
 import Next from './Next';
 import '../../styles/BaseBar/Basebar.css';
 
@@ -11,11 +10,11 @@ const BaseNavbar = () => {
             <div className="col-md-2">
                 <Team />
             </div>
-            <div className="col-md-2" >
+            <div className="col-md-1" >
                 <About />
             </div>
-            <div className="col-md-2" >
-                <Register />
+            <div className="col-md-3">
+
             </div>
             <div className="col-md-6">
                 <Next />

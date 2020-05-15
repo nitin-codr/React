@@ -4,9 +4,9 @@ import '../App.css';
 import AboutApp from './About/AboutApp';
 import TeamApp from './Team/TeamApp';
 import RegisterForm from './RegisterForm/RegisterForm';
-// import Dashboard from './Dashboard/Dashboard';
+import Dashboard from './Dashboard/Dashboard';
 import { BrowserRouter, Route} from 'react-router-dom';
-import Home from './Home.js/Home';
+import Home from './Home/Home';
 import LoginForm from './LoginForm/LoginForm';
 
 class App extends React.Component {
@@ -31,10 +31,10 @@ class App extends React.Component {
                     <Route path="/team" exact component={TeamApp} />
                     <Route path="/register" exact component={RegisterForm} />
                     <Route path="/login" exact component={LoginForm} />
+                    <Route path="/dashboard" exact component={Dashboard} />
                 </BrowserRouter>
                 <div>
                 </div>
-                {/* <Dashboard /> */}
             </div>
         );
     };

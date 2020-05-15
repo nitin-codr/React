@@ -20,11 +20,11 @@ const About = () => {
                     <Detail desc={desc} />
                 </div>
             </div>
-            <div className="row base">
-                <div className="col-md-12">
+            {/* <div className="row base">
+                <div className="col-md-12"> */}
                     <Back />
-                </div>
-            </div>
+                {/* </div>
+            </div> */}
         </div>
     );
 };

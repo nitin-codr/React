@@ -1,4 +1,5 @@
 .topic {
+    text-align: center;
     color: #666666;
     font-size: 3.5vw;
     font-weight: bold;
@@ -16,6 +17,7 @@ form {
 }
 
 .night .topic {
+    text-align: center;
     color: #d4d1d1;
     font-size: 3.5vw;
     background-color: inherit;

@@ -7,7 +7,10 @@ const Login = () => {
         <div className="row nav2">
             <p>
                 <Link to = "/login">
-                    Join Us
+                    Login
+                </Link>
+                <Link to = "/register">
+                    Join us
                 </Link>
             </p>
         </div>

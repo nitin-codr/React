@@ -22,10 +22,10 @@
 }
 
 
-.on {
+.night i {
     color: white;
 }
 
-.off {
+.day i {
     color: black;
 }
