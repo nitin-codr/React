@@ -5,9 +5,9 @@ import Heading from '../MainContent/Heading';
 import '../../styles/Dashboard/Dashboard.css';
 import '../../styles/Register/Register.css';
 import '../../styles/BaseBar/Basebar.css';
-import Close from '../Close/Close';
 import Next from '../BaseBar/Next';
 import { Link } from 'react-router-dom';
+import Back from '../Back/Back';
 
 const Dashboard = () => {
     return (
@@ -61,7 +61,7 @@ const Dashboard = () => {
                 <Next />
             </div>
             <div>
-                <Close />
+                <Back />
             </div>
         </div>
     );
