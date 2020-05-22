@@ -1,6 +1,4 @@
 import React from 'react';
-import Title from '../Title/Title';
-import Topic from '../Topic/Topic';
 import '../../styles/Cards/Cards.css';
 import Close from '../Close/Close';
 import '../../styles/Dashboard/Dashboard.css';
@@ -8,12 +6,12 @@ import '../../styles/Dashboard/Dashboard.css';
 const LoginForm = () => {
     return (
         <div>
-            <div>
-                <Title title="Login" />
+            <div className="tit">
+                Login
             </div>
             <div className="cards">
-                <div>
-                    <Topic text="Login"/>
+                <div className="topic">
+                    Login
                 </div>
                 <div>
                     <form class="ui form" id="login">

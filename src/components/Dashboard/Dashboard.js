@@ -1,7 +1,4 @@
 import React from 'react';
-import Seperator from '../MainContent/Seperator';
-import Description from '../MainContent/Description';
-import Heading from '../MainContent/Heading';
 import '../../styles/Dashboard/Dashboard.css';
 import '../../styles/Register/Register.css';
 import '../../styles/BaseBar/Basebar.css';
@@ -21,15 +18,15 @@ const Dashboard = () => {
                 </p>
             </div>
             <div>
-                <div >
-                    <Heading text="Anavrin" />
+                <div className="heading">
+                    Anavrin
                 </div>
             </div>
             <div>
-                <Seperator />
+                <hr className="sep" />
             </div>
-            <div>
-                <Description desc="Select your archive" />
+            <div className='desc'>
+                Select your archive
             </div>
             <div className="ui form row">
                 <div className="col-md-6">

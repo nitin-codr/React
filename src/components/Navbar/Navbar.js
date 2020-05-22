@@ -1,14 +1,20 @@
 import React from 'react';
 import '../../styles/Navbar/Navbar.css'
+import { connect } from 'react-redux';
+import {day, night} from '../../actions'
 
 class Navbar extends React.Component {
-    onIconClick = (event) => {
-        let x=this.props.nMode;
-        (x==="day") ? x="night" : x="day";
-        this.props.onClick(x);
+    onIconClick = () => {
+        console.log(this.props);
+        if(this.props.mode==="day") {
+            this.props.night();
+        }
+        else {
+            this.props.day();
+        }
     }
     render() {   
-        let nMode=this.props.nMode;
+        let nMode=this.props.mode;
         let cl='off';
         if(nMode==="night") {
             cl='on';
@@ -22,4 +28,10 @@ class Navbar extends React.Component {
     }
 };
 
-export default Navbar;
+const mapStateToProps = (state) => {
+    return {mode: state.mode.mode};
+}
+
+export default connect(mapStateToProps, {
+    day, night
+}) (Navbar);

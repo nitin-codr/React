@@ -1,6 +1,4 @@
 import React from 'react';
-import Title from '../Title/Title';
-import Topic from '../Topic/Topic';
 import '../../styles/Cards/Cards.css';
 import '../../styles/Register/Register.css';
 import Close from '../Close/Close';
@@ -8,12 +6,12 @@ import Close from '../Close/Close';
 const RegisterForm = () => {
     return (
         <div>
-            <div>
-                <Title title="Join Us" />
+            <div className='tit'>
+                Join Us
             </div>
             <div className="cards">
-                <div>
-                    <Topic text="Signup"/>
+                <div className="topic">
+                    Signup
                 </div>
                 <form className="row ui form">
                     <div className="col-md-6" style={{"paddingRight": '5vw', 'borderRight': '1px solid green'}}>

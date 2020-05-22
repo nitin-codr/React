@@ -5,9 +5,10 @@ import AboutApp from './About/AboutApp';
 import TeamApp from './Team/TeamApp';
 import RegisterForm from './RegisterForm/RegisterForm';
 import Dashboard from './Dashboard/Dashboard';
-import { BrowserRouter, Route} from 'react-router-dom';
+import { BrowserRouter, Route, Switch} from 'react-router-dom';
 import Home from './Home/Home';
 import LoginForm from './LoginForm/LoginForm';
+import { connect } from 'react-redux';
 
 class App extends React.Component {
     state= {
@@ -18,20 +19,24 @@ class App extends React.Component {
     }
     render() {
         return (
-            <div className={`app ${this.state.nMode}`}>
+            <div className={`app ${this.props.mode}`}>
                 <BrowserRouter>
-                    <Navbar onClick={this.onClickHandle} nMode={this.state.nMode} />
-                    <Route path="/" exact component={Home} />
-                    <Route 
-                        path="/about" exact 
-                        render={(routeProps) => (
-                            <AboutApp {...routeProps} nMode={this.state.nMode} />
-                        )}
-                    />
-                    <Route path="/team" exact component={TeamApp} />
-                    <Route path="/register" exact component={RegisterForm} />
-                    <Route path="/login" exact component={LoginForm} />
-                    <Route path="/dashboard" exact component={Dashboard} />
+                    <div>
+                        <Navbar onClick={this.onClickHandle} />
+                        <Switch>
+                            <Route path="/" exact component={Home} />
+                            <Route 
+                                path="/about" exact 
+                                render={(routeProps) => (
+                                    <AboutApp {...routeProps} />
+                                )}
+                            />
+                            <Route path="/team" exact component={TeamApp} />
+                            <Route path="/register" exact component={RegisterForm} />
+                            <Route path="/login" exact component={LoginForm} />
+                            <Route path="/dashboard" exact component={Dashboard} />
+                        </Switch>
+                    </div>
                 </BrowserRouter>
                 <div>
                 </div>
@@ -40,4 +45,8 @@ class App extends React.Component {
     };
 };
 
-export default App;
+const mapStateToProps = (state) => {
+    return {mode: state.mode.mode}
+}
+
+export default connect(mapStateToProps) (App);

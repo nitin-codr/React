@@ -1,27 +1,23 @@
 import React from 'react';
-import Title from '../Title/Title';
-import Name from '../Name/Name';
-import Detail from '../Detail/Detail';
 import '../../styles/Cards/Cards.css';
 import Close from '../Close/Close';
 
-const About = (props) => {
+const About = () => {
     const desc="Hi, I'm the developer behind this project. Currently pursuing my B.E. degree from NSIT. My interest in development bought us here.";
     return (
         <div >
-            <div>
-                <Title title="Team" />
+            <div className='tit'>
+                Team
             </div>
             <div className="cards">
-                <div>
-                    <Name text="Nitin Porwal"/>
+                <div className='name'>
+                    Nitin Porwal
                 </div>
-                <div>
-                    <Detail desc={desc} />
+                <div className="detail">
+                    {desc}
                 </div>
             </div>
-            
-            <div classname="row base">
+            <div className="row base">
                 <div className="col-md-12">
                     <Close />
                 </div>
